@@ -1,0 +1,9 @@
+version: '3.9'
+services:
+  poc-java-mock:
+    build: .
+    image: poc-java-mock
+    container_name: poc-java-mock
+    ports:
+      - target: 8080
+        published: 8090

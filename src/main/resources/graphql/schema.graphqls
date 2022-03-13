@@ -1,0 +1,29 @@
+type User {
+    id: ID!
+    name: String!
+    document: String!
+    phone: String!
+    email: String!
+    address: Address!
+}
+
+type Address {
+    id: ID!
+    city: String!
+    state: String!
+    street: String!
+    zipCode: String!
+    number: Int!
+}
+ 
+type CheckingAccount {
+    id: ID!
+    number: Int!
+    checkingAccountBalance: Float! 
+    applicationAccountBalance: Float!
+    user: User!    
+}
+
+type Query {
+    findCheckingAccount(number: Int): CheckingAccount
+}

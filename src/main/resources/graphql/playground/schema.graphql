@@ -1,0 +1,43 @@
+query GET_CHECKING_ACCOUNT($number: Int) {
+    findCheckingAccount(number: $number) {
+        id
+        number
+        applicationAccountBalance
+        checkingAccountBalance
+    }
+}
+
+query GET_USER_CHECKING_ACCOUNT($number: Int) {
+    findCheckingAccount(number: $number) {
+        user {
+            id
+            name
+            document
+            phone
+            email
+            address {
+                id
+                city
+                state
+                street
+                zipCode
+                number
+            }
+        }
+    }
+}
+
+query GET_ADDRESS_CHECKING_ACCOUNT($number: Int) {
+    findCheckingAccount(number: $number) {
+        user {
+            address {
+                id
+                city
+                state
+                street
+                zipCode
+                number
+            }
+        }
+    }
+}

@@ -1,0 +1,40 @@
+plugins {
+	id 'org.springframework.boot' version '2.6.0'
+	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+	id 'org.sonarqube' version '3.3'
+	id 'java'
+}
+
+group = 'open.secret.com'
+version = '0.0.1-alpha01'
+sourceCompatibility = '17'
+
+jar {
+    enabled = false
+}
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'com.graphql-java-kickstart:graphql-spring-boot-starter:12.0.0'
+	
+	compileOnly 'com.graphql-java-kickstart:graphql-java-tools:12.0.1'
+
+	developmentOnly 'org.springframework.boot:spring-boot-devtools'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+
+test {
+	useJUnitPlatform()
+}
+
+sonarqube {
+   properties {
+     property "sonar.projectKey", "poc-java-mock"
+     property "sonar.host.url", "http://localhost:9000"
+     property "sonar.login", "f176039476096a9f4ae91e424258eeef34299253"
+   }
+}

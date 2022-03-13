@@ -1,0 +1,12 @@
+spring:
+  main:
+    banner-mode: off
+graphql:
+  playground:
+    enabled: true
+    headers:
+      headerFor: AllTabs
+    tabs:
+      - name: Teste Open Secret
+        query: classpath:graphql/playground/schema.graphql
+        variables: classpath:graphql/playground/schema_variables.json
