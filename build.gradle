@@ -33,7 +33,8 @@ test {
 
 sonarqube {
    properties {
-     property "sonar.projectKey", "poc-java-mock"
+     //property "sonar.projectKey", "poc-java-mock"
+     property "sonar.projectKey", "harisson-freitas_poc-java-mock"    
      property "sonar.host.url", "http://localhost:9000"
      property "sonar.login", "f176039476096a9f4ae91e424258eeef34299253"
    }
