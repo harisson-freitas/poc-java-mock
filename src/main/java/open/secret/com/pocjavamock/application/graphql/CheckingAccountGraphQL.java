@@ -18,6 +18,4 @@ public class CheckingAccountGraphQL implements GraphQLQueryResolver {
     public CheckingAccount findCheckingAccount(final Integer number) {
         return accountService.getCheckingAccount(number);
     }
-
-    private void teste(){}
 }
