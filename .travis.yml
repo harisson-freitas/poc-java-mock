@@ -1,3 +1,6 @@
+language: java
+sudo: false
+install: true
 addons:
   sonarcloud:
     organization: "harisson-freitas"
