@@ -39,6 +39,7 @@ sonarqube {
      property "sonar.projectKey", "harisson-freitas_poc-java-mock"
      property "sonar.organization", "harisson-freitas"
      property "sonar.host.url", "https://sonarcloud.io"
-     property "sonar.buildbreaker.skip", "false"
+     property "sonar.qualitygate.wait", "true"
+     //property "sonar.buildbreaker.skip", "false"
    }
 }
