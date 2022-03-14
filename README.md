@@ -4,7 +4,7 @@
 Essa POC visa demonstrar o modelo de utilização da tecnologia GraphQL para fornecer recursos para projetos de "_**Mobile/WEB**_";
 
 ## Tecnologias
-Para o desenvovimento dessa POC, foram utilizadas ás tecnologias abaixo:
+Para o desenvovimento dessa POC, foram utilizadas às tecnologias abaixo:
 
 |Tecnologia|Versão|
 | :---    |:---: |
