@@ -15,6 +15,8 @@ public class UserService {
     public User getUser() {
         var address = addressService.getAddress();
 
+        validation(null);
+
         return new User(
             1L, 
             "Teste Demo", 
@@ -22,5 +24,11 @@ public class UserService {
             "(51) 991209120", 
             "teste@teste.com.br", 
             address);
+    }
+    
+    private void validation(User user) {
+	    if (user.id() == 2L) {
+	        System.out.println("TESTE"); 
+	    }
     }
 }
