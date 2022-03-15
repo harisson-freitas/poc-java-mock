@@ -23,7 +23,7 @@ public class AddressService {
 	        System.out.println("TESTE"); 
 	    }
 
-        if (address.city.equals("Campo Novo")) {
+        if (address.city().equals("Campo Novo")) {
 	        System.out.println("TESTE"); 
 	    }
 
