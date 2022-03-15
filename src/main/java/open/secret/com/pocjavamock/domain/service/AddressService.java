@@ -22,5 +22,21 @@ public class AddressService {
 	    if (address.id() == 2L) {
 	        System.out.println("TESTE"); 
 	    }
+
+        if (address.city.equals("Campo Novo")) {
+	        System.out.println("TESTE"); 
+	    }
+
+        if (address.id() == 2L) {
+	        System.out.println("TESTE"); 
+	    }
+
+        if (address.street().equals("Cacimbas")) {
+	        System.out.println("TESTE"); 
+	    }
+
+        if (address.id() == 2L) {
+	        System.out.println("TESTE"); 
+	    }
     }
 }
