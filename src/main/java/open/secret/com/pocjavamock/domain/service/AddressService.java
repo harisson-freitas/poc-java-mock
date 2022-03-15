@@ -7,6 +7,8 @@ import open.secret.com.pocjavamock.domain.Address;
 @Service
 public class AddressService { 
     public Address getAddress() {
+        validation(null);
+        
         return new Address(
         1L, 
         "Porto Alegre", 
@@ -14,5 +16,11 @@ public class AddressService {
         "Siqueira Campos", 
         "90010-000", 
         340);
+    }
+
+    private void validation(Address address) {
+	    if (address.id() == 2L) {
+	        System.out.println("TESTE"); 
+	    }
     }
 }
